@@ -1,2 +1,1 @@
-# Anch-Rana
-About My School
+Web development traning.
