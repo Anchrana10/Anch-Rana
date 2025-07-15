@@ -1,40 +1,86 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./Style/navbar.css">
+
+    <link rel="stylesheet" href="./Style/navbar2.css">
+
+    <link rel="stylesheet" href="./Style/herosection.css">
 </head>
-<body>
-    <!-- <h1>TITLE</h1>
-    <h2>Messi</h2>
-    <p>Messi is one of the gratest player of all time. He has won the most ballon d'or.</p>
-    <h3>Ronaldo</h3>
-    <p>Ronaldo is also one of the gratest player of all time. He is also known as CR7.</p>
-    <h4>Cricket player Name</h4>
-    <ul>
-        <li>Virat kholi</li>
-        <li>Ms Dhoni</li>
-        <li>Dipendra singh airee</li>
-    </ul>
-    <h4>Input devices</h4>
-    <ol>
-        <li>Mouse</li>
-        <li>Keyboard</li>
-        <li>Webcamera</li>
-    </ol> -->
-    <nav>
-        <p>Shree Ratna Rajya Laxmi Secondary School</p>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Acedemics</a></li>
-            <li><a href="#">Event</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
+
+<body style="background-color: gray;">
+
+    <nav class="navbar">
+
+        <div class="nav-container">
+
+            <div class="nav-logo">
+
+                <img  src="./Assests/school-logo.png" alt="">
+
+                <span class="nav-span">RRLLS</span>
+
+            </div>
+
+            <ul class="nav-menu">
+
+                <li class="nav-item"><a href="#home" class="nav-link">Hsome</a></li>
+
+                <li class="nav-item"><a href="#about"
+                    class="nav-link">About</a></li>
+
+                <li class="nav-item"><a href="#academics"class="nav-link">Academics</a></li>
+
+                <li class="nav-item"><a href="#event"class="nav-link">Event</a></li>
+
+                <li class="nav-item"><a href="#contact"class="nav-link">Contact</a></li>
+
+            </ul>
+
+        </div>
+
     </nav>
 
+
+    <section id="Home" class="hero">
+
+        <div class="hero-content">
+
+            <h1 class="hero-title">Welcome to RRLSS</h1>
+
+            <p class="hero-subtitle">Nuturing minds, Building future, Creationg leader</p>
+
+            <div class="hero-buttons">
+
+                <button id="change" onclick="change()" class="btn btn-primary">Apply Now</button>
+
+                <button class="btn btn-secondary">Welcome back</button>
+
+            </div>
+
+        </div>
+
+        <div class="hero-image">
+
+            <div class="floating-card">
+
+                <!-- <i class="fas fa-users"></i> -->
+
+                 <h3>1500+ Students</h3>
+
+                 <p>A large community</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
 </body>
+
+<script src="./JavaScript/Script.js"></script>
+
 </html>
