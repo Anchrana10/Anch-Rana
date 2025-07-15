@@ -1,47 +1,149 @@
-.hero{
-   min-height: 100vh;
-   background:linear-gradient(135deg, rgba(30,58,138,0.85)0%,rgba(30,64,175,0.45)100%), url('../Assests/school.jpg') center center/ cover no-repeat;
-   display: flex;
-   align-items: center;
-   justify-content: space-around;
-   position: relative;
-   overflow: hidden;
-   width: 100%;
-   
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.hero-content{
-    
-    background: rgba(255, 255, 255, 0.1);
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Deep Blue Color Palette */
+:root {
+    --primary-blue: #1e3a8a;
+    --secondary-blue: #3b82f6;
+    --light-blue: #60a5fa;
+    --dark-blue: #1e40af;
+    --accent-blue: #2563eb;
+    --white: #ffffff;
+    --light-gray: #f8fafc;
+    --gray: #64748b;
+    --dark-gray: #334155;
+}
+
+/* Navigation */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(30, 58, 138, 0.95);
     backdrop-filter: blur(10px);
-    padding: 40px 20px;
-    border-radius: 20px;
+    z-index: 1000;
+    transition: all 0.3s ease;
+    padding: 1rem 0;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    color: var(--white);
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.nav-logo i {
+    margin-right: 10px;
+    font-size: 2rem;
+    color: var(--light-blue);
+    height: 30px;
+}
+
+.nav-logo img {
+    margin-top: -15px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
 }
 
 
-.hero-title{
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-link {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+.nav-link:hover {
+    color: var(--light-blue);
+}
+
+
+
+
+/* Hero Section */
+.hero {
+    min-height: 100vh;
+    background:
+        linear-gradient(135deg, rgba(30, 58, 138, 0.85) 0%, rgba(30, 64, 175, 0.45) 100%),
+        url('../assests/school.jpg') center center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.hero-content {
+    flex: 1;
+    max-width: 600px;
+    color:  #ffffff;
+    /* z-index: 2; */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-title {
     font-size: 50px;
     font-weight: 700;
     margin-bottom: 16px;
-    color: #fff;
-
+    /* line-height: 1.2; */
 }
 
-.hero-subtitle{
+.hero-subtitle {
     font-size: 19px;
     margin-bottom: 32px;
-    color: #fff;
-    margin-left: 20px;
+    /* opacity: 1; */
 }
 
-.hero-button{
+.hero-buttons {
     display: flex;
     gap: 16px;
-    
 }
 
-.btn{
-    padding: 12px, 30px;
+.btn {
+    padding: 12px 30px;
     border: none;
     border-radius: 50px;
     font-weight: 600;
@@ -49,59 +151,62 @@
     cursor: pointer;
     transition: all 0.3s ease;
     font-size: 16px;
-   
+    /* display: inline-block; */
 }
 
-.btn-primary{
-    background: aqua;
-    color: white;
-   margin-left: 90px;
-    border: 2px solid aqua;
+.btn-primary {
+    background: #60a5fa;
+    color:  #ffffff;
+}   
+
+.btn-primary:hover {
+    background: #0073ff;
 }
 
-.btn-primary:hover{
-    background-color: rgb(25, 167, 233);
-}
-
-.btn-secondary{
+.btn-secondary {
     background: transparent;
-    color: white;
-    border: 2px solid #fff;
-    margin: 0px;
+    color:  #ffffff;
+    border: 2px solid  #ffffff;
 }
 
-.btn-secondary:hover{
-    background-color: #fff;
+.btn-secondary:hover {
+    background:  #ffffff;
     color: blue;
 }
 
-.hero-image{
+.hero-image {
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    
 }
 
-.floating-card{
+.floating-card {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
-    border: 1px solid gray;
+    border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 20px;
-    padding: 32px;
+    padding: 2rem;
     text-align: center;
-    color: #fff;
+    color:  #ffffff;
 }
 
-/* .floating-card i{
-    font-size: 48px;
-    color: lightblue;
-    margin-bottom: 16px;
-} */
+.floating-card i {
+    font-size: 3rem;
+    color: var(--light-blue);
+    margin-bottom: 1rem;
+}
 
-.floating-card h3{
-    font-size: 24px;
-    margin-bottom: 8px;
+.floating-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Section Styles */
+section {
+    /* padding: 80px 0; */
+    
 }
 
 .section-title {

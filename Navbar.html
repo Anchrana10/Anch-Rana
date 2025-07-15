@@ -1,85 +1,64 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=
-    , initial-scale=1.0">
-    <title>Document</title>
-
-    <link rel="stylesheet" href="./Style/navbar2.css">
-
-    <link rel="stylesheet" href="./Style/herosection.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RRLSS - Where Dreams Take Flight</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/herosection.css">
 </head>
-
-<body style="background-color: rgb(255, 255, 255);">
-
+<body>
+    <!-- Navigation -->
     <nav class="navbar">
-
         <div class="nav-container">
-
             <div class="nav-logo">
-
-                <img  src="./Assests/school-logo.png" alt="">
-
-                <span class="nav-span">RRLLS</span>
-
+                <i><img src="./Assests/school-logo.png" alt=""></i>
+                <span>RRLSS</span>
             </div>
-
             <ul class="nav-menu">
-
-                <li class="nav-item"><a href="#home" class="nav-link">Hsome</a></li>
-
-                <li class="nav-item"><a href="#about"
-                    class="nav-link">About</a></li>
-
-                <li class="nav-item"><a href="#academics"class="nav-link">Academics</a></li>
-
-                <li class="nav-item"><a href="#event"class="nav-link">Event</a></li>
-
-                <li class="nav-item"><a href="#contact"class="nav-link">Contact</a></li>
-
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#academics" class="nav-link">Academics</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#events" class="nav-link">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
             </ul>
-
         </div>
-
     </nav>
 
-
-    <section id="Home" class="hero">
-
+    <!-- Hero Section -->
+    <section id="home" class="hero">
         <div class="hero-content">
-
             <h1 class="hero-title">Welcome to RRLSS</h1>
-
-            <p class="hero-subtitle">Nuturing minds, Building future, Creationg leader</p>
-
+            <p class="hero-subtitle">Nurturing minds, Building futures, Creating leaders</p>
             <div class="hero-buttons">
-
-                <button id="change" onclick="change()" class="btn btn-primary">Apply Now</button>
-
-                <button class="btn btn-secondary">Welcome back</button>
-
+                <button class="btn btn-primary">Apply Now</button>
+                <button class="btn btn-secondary">Virtual Tour</button>
             </div>
-
         </div>
-
         <div class="hero-image">
-
             <div class="floating-card">
-
-                <!-- <i class="fas fa-users"></i> -->
-
-                 <h3>1500+ Students</h3>
-
-                 <p>A large community</p>
-
+                <i class="fas fa-users"></i>
+                <h3>1500+ Students</h3>
+                <p>A large community</p>
             </div>
-
         </div>
-
     </section>
 
-  <section id="about" class="about">
+    <!-- About Section -->
+    <section id="about" class="about">
         <div class="container">
             <h2 class="section-title">About Our School</h2>
             <div class="about-content">
@@ -307,8 +286,6 @@
         </div>
     </footer>
 
+    <script src="script.js"></script>
 </body>
-
-<script src="./JavaScript/Script.js"></script>
-
 </html>
